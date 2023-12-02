@@ -1,7 +1,7 @@
 # Regression Optimizer
 <br>
 
-## Overview
+## OVERVIEW
 ### main.py
 - Takes data from a spreadsheet (in `data/data.xlsx`)
 - Runs linear regressions to predict a dependent variable using every combination of independent variables
@@ -15,7 +15,7 @@
 - Saves the LLM response in `logs/text_files/gpt_summaries/`
 <br>
 
-## Getting Started
+## GETTING STARTED
 
 ### Setup Virtual Environment and Install Dependencies
 1. Clone the repository to your machine and navigate to the new directory
@@ -37,7 +37,7 @@ After running **main.py**
 2. Check the **logs/text_files/gpt_summaries/** directory for the analysis results
 <br><br>
 <br><br>
-## License
+## LICENSE
 **Copyright 2023 &copy; M. Preston Sparks** <br>
 All Rights Reserved. <br>
 Unauthorized copying, modification, distribution, or use of this repository's contents, including but not limited to software, data files, documentation, and any other materials, via any medium, is strictly prohibited without express written permission from the copyright holder. <br>
