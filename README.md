@@ -21,24 +21,24 @@
 1. Clone the repository to your machine and navigate to the new directory
 
 **MacOS**<br>
-`python3 -m venv venv` <br>
-`source venv/bin/activate` <br>
-`pip install -r requirements.txt`
+```python3 -m venv venv``` <br>
+```source venv/bin/activate``` <br>
+```pip install -r requirements.txt```
 <br>
 
 **Windows**<br>
-`python -m venv venv` <br>
-`venv\Scripts\activate` <br>
-`pip install -r requirements.txt`
+```python -m venv venv``` <br>
+```venv\Scripts\activate``` <br>
+```pip install -r requirements.txt```
 <br><br>
 ### Run `main.py`
 1. Ensure that your data is correctly formatted and placed in the **data/data.xlsx** file
-2. Run `python src/main.py` to perform the regression analysis <br>
+2. Run ```python src/main.py``` to perform the regression analysis <br>
 <br>
 
 ### Run `analyze_model.py`
 After running **main.py**
-1. Run `python src/analyze_model.py`
+1. Run ```python src/analyze_model.py```
 2. Check the **logs/text_files/gpt_summaries/** directory for the analysis results
 <br><br>
 <br><br>
