@@ -21,14 +21,14 @@
 1. Clone the repository to your machine and navigate to the new directory
 
 **MacOS**<br>
-```python3 -m venv venv``` <br>
+```python -m venv venv``` <br>
 ```source venv/bin/activate``` <br>
 ```pip install -r requirements.txt```
 <br>
 
 **Windows**<br>
 ```python -m venv venv``` <br>
-```venv\Scripts\activate``` <br>
+```venv/Scripts/activate``` <br>
 ```pip install -r requirements.txt```
 <br><br>
 ### Run `main.py`

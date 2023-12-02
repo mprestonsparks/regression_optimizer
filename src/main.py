@@ -1,11 +1,14 @@
 import pandas as pd
 import numpy as np
+import os
 import statsmodels.api as sm
 import seaborn as sns
 import matplotlib.pyplot as plt
 from itertools import combinations, combinations_with_replacement
 from datetime import datetime
 
+
+print("Current Working Directory:", os.getcwd())
 # Read data from Excel
 def read_data(file_name):
     df = pd.read_excel('../data/' + file_name)
@@ -67,6 +70,11 @@ def find_best_model(df, dependent_var):
     csv_file_path = f"../logs/csv_files/model_summaries/model_summaries_{timestamp}.csv"
     master_table_path = f"../logs/text_files/master_tables/master_table_{timestamp}.txt"
 
+    # Create directories if they don't exist
+    os.makedirs(os.path.dirname(text_file_path), exist_ok=True)
+    os.makedirs(os.path.dirname(csv_file_path), exist_ok=True)
+    os.makedirs(os.path.dirname(master_table_path), exist_ok=True)
+
     with open(text_file_path, 'w') as log_file, open(master_table_path, 'w') as master_file:
         for combo in generate_combinations(independent_vars, len(independent_vars)):
             interaction_df = create_interactions(df, combo)
@@ -124,7 +132,9 @@ def find_best_model(df, dependent_var):
 
 file_name = 'data.xlsx'
 df = read_data(file_name)
-best_model, best_combo, text_file_path, csv_file_path, model_summaries = find_best_model(df, 'House_Price_Index')
+best_model, best_combo, text_file_path, csv_file_path, model_summaries = find_best_model(df, 'Dependent_Variable')
 
 print(model_summaries)
+
+
 
