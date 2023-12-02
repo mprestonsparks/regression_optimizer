@@ -19,12 +19,17 @@
 
 ### Setup Virtual Environment and Install Dependencies
 1. Clone the repository to your machine and navigate to the new directory
-2. Run the setup script to create a virtual environment and install dependencies<br>
+
 **MacOS**<br>
-`sh scripts/setup_mac.sh`
-<br><br>
+`python3 -m venv venv`
+`source venv/bin/activate`
+`pip install -r requirements.txt`
+<br>
+
 **Windows**<br>
-`scripts/setup_windows.bat`
+`python -m venv venv`
+`venv\Scripts\activate`
+`pip install -r requirements.txt`
 <br><br>
 ### Run `main.py`
 1. Ensure that your data is correctly formatted and placed in the **data/data.xlsx** file
