@@ -13,7 +13,7 @@
 - Creates a custom prompt incorporating `master_table` data
 - Sends the generated prompt to an LLM for analysis
 - Saves the LLM response in `logs/text_files/gpt_summaries/`
-<br>
+<br><br>
 
 ## GETTING STARTED
 
