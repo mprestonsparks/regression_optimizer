@@ -1,0 +1,394 @@
+Model with variables ('Variable_1',):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.111
+Model:                            OLS   Adj. R-squared:                  0.109
+Method:                 Least Squares   F-statistic:                     80.29
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           3.46e-18
+Time:                        01:08:13   Log-Likelihood:                -3126.0
+No. Observations:                 646   AIC:                             6256.
+Df Residuals:                     644   BIC:                             6265.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        117.2778      2.209     53.096      0.000     112.940     121.615
+Variable_1     0.0026      0.000      8.961      0.000       0.002       0.003
+==============================================================================
+Omnibus:                       28.175   Durbin-Watson:                   0.256
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               13.594
+Skew:                           0.133   Prob(JB):                      0.00112
+Kurtosis:                       2.341   Cond. No.                     1.40e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.4e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Model with variables ('Variable_2',):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.017
+Model:                            OLS   Adj. R-squared:                  0.016
+Method:                 Least Squares   F-statistic:                     11.43
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           0.000768
+Time:                        01:08:13   Log-Likelihood:                -3158.2
+No. Observations:                 646   AIC:                             6320.
+Df Residuals:                     644   BIC:                             6329.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        140.7199      2.390     58.874      0.000     136.026     145.413
+Variable_2    -0.0154      0.005     -3.380      0.001      -0.024      -0.006
+==============================================================================
+Omnibus:                       28.384   Durbin-Watson:                   0.061
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               12.953
+Skew:                          -0.093   Prob(JB):                      0.00154
+Kurtosis:                       2.332   Cond. No.                         989.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Model with variables ('Variable_3',):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.069
+Model:                            OLS   Adj. R-squared:                  0.068
+Method:                 Least Squares   F-statistic:                     48.05
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           1.01e-11
+Time:                        01:08:13   Log-Likelihood:                -3140.7
+No. Observations:                 646   AIC:                             6285.
+Df Residuals:                     644   BIC:                             6294.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         93.8244      5.907     15.884      0.000      82.226     105.423
+Variable_3     0.2694      0.039      6.932      0.000       0.193       0.346
+==============================================================================
+Omnibus:                       10.104   Durbin-Watson:                   0.036
+Prob(Omnibus):                  0.006   Jarque-Bera (JB):                6.532
+Skew:                          -0.080   Prob(JB):                       0.0382
+Kurtosis:                       2.534   Cond. No.                         729.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+Model with variables ('Variable_1', 'Variable_2'):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.128
+Model:                            OLS   Adj. R-squared:                  0.126
+Method:                 Least Squares   F-statistic:                     47.39
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           6.34e-20
+Time:                        01:08:13   Log-Likelihood:                -3119.5
+No. Observations:                 646   AIC:                             6245.
+Df Residuals:                     643   BIC:                             6258.
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        124.1509      2.903     42.768      0.000     118.451     129.851
+Variable_1     0.0026      0.000      9.051      0.000       0.002       0.003
+Variable_2    -0.0155      0.004     -3.604      0.000      -0.024      -0.007
+==============================================================================
+Omnibus:                       25.142   Durbin-Watson:                   0.288
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               13.273
+Skew:                           0.158   Prob(JB):                      0.00131
+Kurtosis:                       2.373   Cond. No.                     1.86e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.86e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Model with variables ('Variable_1', 'Variable_2', 'Variable_1_x_Variable_2'):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.132
+Model:                            OLS   Adj. R-squared:                  0.128
+Method:                 Least Squares   F-statistic:                     32.46
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           1.52e-19
+Time:                        01:08:13   Log-Likelihood:                -3118.3
+No. Observations:                 646   AIC:                             6245.
+Df Residuals:                     642   BIC:                             6262.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                     118.7806      4.519     26.284      0.000     109.907     127.654
+Variable_1                  0.0032      0.000      6.668      0.000       0.002       0.004
+Variable_2                  0.0028      0.013      0.219      0.826      -0.022       0.027
+Variable_1_x_Variable_2 -2.297e-06   1.48e-06     -1.549      0.122   -5.21e-06    6.14e-07
+==============================================================================
+Omnibus:                       22.224   Durbin-Watson:                   0.297
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               12.563
+Skew:                           0.167   Prob(JB):                      0.00187
+Kurtosis:                       2.404   Cond. No.                     1.46e+07
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.46e+07. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Model with variables ('Variable_1', 'Variable_3'):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.172
+Model:                            OLS   Adj. R-squared:                  0.169
+Method:                 Least Squares   F-statistic:                     66.65
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           4.95e-27
+Time:                        01:08:13   Log-Likelihood:                -3103.1
+No. Observations:                 646   AIC:                             6212.
+Df Residuals:                     643   BIC:                             6226.
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         80.3718      5.778     13.911      0.000      69.026      91.717
+Variable_1     0.0025      0.000      8.911      0.000       0.002       0.003
+Variable_3     0.2525      0.037      6.873      0.000       0.180       0.325
+==============================================================================
+Omnibus:                        8.251   Durbin-Watson:                   0.264
+Prob(Omnibus):                  0.016   Jarque-Bera (JB):                6.239
+Skew:                           0.131   Prob(JB):                       0.0442
+Kurtosis:                       2.596   Cond. No.                     3.79e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.79e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Model with variables ('Variable_1', 'Variable_3', 'Variable_1_x_Variable_3'):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.172
+Model:                            OLS   Adj. R-squared:                  0.168
+Method:                 Least Squares   F-statistic:                     44.37
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           4.57e-26
+Time:                        01:08:13   Log-Likelihood:                -3103.0
+No. Observations:                 646   AIC:                             6214.
+Df Residuals:                     642   BIC:                             6232.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                      79.3076     10.820      7.329      0.000      58.060     100.555
+Variable_1                  0.0027      0.001      1.801      0.072      -0.000       0.006
+Variable_3                  0.2596      0.071      3.668      0.000       0.121       0.399
+Variable_1_x_Variable_3  -1.11e-06   9.54e-06     -0.116      0.907   -1.98e-05    1.76e-05
+==============================================================================
+Omnibus:                        8.169   Durbin-Watson:                   0.264
+Prob(Omnibus):                  0.017   Jarque-Bera (JB):                6.184
+Skew:                           0.130   Prob(JB):                       0.0454
+Kurtosis:                       2.598   Cond. No.                     1.09e+07
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.09e+07. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Model with variables ('Variable_2', 'Variable_3'):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.082
+Model:                            OLS   Adj. R-squared:                  0.079
+Method:                 Least Squares   F-statistic:                     28.61
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           1.25e-12
+Time:                        01:08:13   Log-Likelihood:                -3136.4
+No. Observations:                 646   AIC:                             6279.
+Df Residuals:                     643   BIC:                             6292.
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const        100.9794      6.359     15.881      0.000      88.493     113.465
+Variable_2    -0.0130      0.004     -2.933      0.003      -0.022      -0.004
+Variable_3     0.2601      0.039      6.709      0.000       0.184       0.336
+==============================================================================
+Omnibus:                        6.735   Durbin-Watson:                   0.059
+Prob(Omnibus):                  0.034   Jarque-Bera (JB):                5.229
+Skew:                          -0.114   Prob(JB):                       0.0732
+Kurtosis:                       2.623   Cond. No.                     2.80e+03
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.8e+03. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Model with variables ('Variable_2', 'Variable_3', 'Variable_2_x_Variable_3'):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.082
+Model:                            OLS   Adj. R-squared:                  0.078
+Method:                 Least Squares   F-statistic:                     19.13
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           6.85e-12
+Time:                        01:08:13   Log-Likelihood:                -3136.3
+No. Observations:                 646   AIC:                             6281.
+Df Residuals:                     642   BIC:                             6298.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                     105.5163     11.405      9.252      0.000      83.120     127.912
+Variable_2                 -0.0229      0.021     -1.086      0.278      -0.064       0.018
+Variable_3                  0.2297      0.074      3.090      0.002       0.084       0.376
+Variable_2_x_Variable_3  6.677e-05      0.000      0.479      0.632      -0.000       0.000
+==============================================================================
+Omnibus:                        6.961   Durbin-Watson:                   0.059
+Prob(Omnibus):                  0.031   Jarque-Bera (JB):                5.389
+Skew:                          -0.118   Prob(JB):                       0.0676
+Kurtosis:                       2.620   Cond. No.                     7.29e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 7.29e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Model with variables ('Variable_1', 'Variable_2', 'Variable_3'):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.184
+Model:                            OLS   Adj. R-squared:                  0.181
+Method:                 Least Squares   F-statistic:                     48.40
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           3.30e-28
+Time:                        01:08:13   Log-Likelihood:                -3098.1
+No. Observations:                 646   AIC:                             6204.
+Df Residuals:                     642   BIC:                             6222.
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         87.6252      6.178     14.183      0.000      75.493      99.757
+Variable_1     0.0025      0.000      8.993      0.000       0.002       0.003
+Variable_2    -0.0132      0.004     -3.166      0.002      -0.021      -0.005
+Variable_3     0.2430      0.037      6.639      0.000       0.171       0.315
+==============================================================================
+Omnibus:                        7.519   Durbin-Watson:                   0.288
+Prob(Omnibus):                  0.023   Jarque-Bera (JB):                5.997
+Skew:                           0.142   Prob(JB):                       0.0499
+Kurtosis:                       2.623   Cond. No.                     4.09e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 4.09e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Model with variables ('Variable_1', 'Variable_2', 'Variable_3', 'Variable_1_x_Variable_2'):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.186
+Model:                            OLS   Adj. R-squared:                  0.181
+Method:                 Least Squares   F-statistic:                     36.68
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           1.24e-27
+Time:                        01:08:13   Log-Likelihood:                -3097.3
+No. Observations:                 646   AIC:                             6205.
+Df Residuals:                     641   BIC:                             6227.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                      83.9983      6.879     12.211      0.000      70.491      97.506
+Variable_1                  0.0029      0.000      6.338      0.000       0.002       0.004
+Variable_2                  0.0004      0.012      0.036      0.971      -0.023       0.024
+Variable_3                  0.2403      0.037      6.556      0.000       0.168       0.312
+Variable_1_x_Variable_2 -1.723e-06   1.44e-06     -1.197      0.232   -4.55e-06     1.1e-06
+==============================================================================
+Omnibus:                        6.948   Durbin-Watson:                   0.294
+Prob(Omnibus):                  0.031   Jarque-Bera (JB):                5.749
+Skew:                           0.147   Prob(JB):                       0.0564
+Kurtosis:                       2.643   Cond. No.                     2.29e+07
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.29e+07. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Model with variables ('Variable_1', 'Variable_2', 'Variable_3', 'Variable_1_x_Variable_3'):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.185
+Model:                            OLS   Adj. R-squared:                  0.180
+Method:                 Least Squares   F-statistic:                     36.32
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           2.23e-27
+Time:                        01:08:13   Log-Likelihood:                -3097.9
+No. Observations:                 646   AIC:                             6206.
+Df Residuals:                     641   BIC:                             6228.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                      83.2566     10.814      7.699      0.000      62.021     104.492
+Variable_1                  0.0032      0.001      2.175      0.030       0.000       0.006
+Variable_2                 -0.0135      0.004     -3.200      0.001      -0.022      -0.005
+Variable_3                  0.2726      0.070      3.873      0.000       0.134       0.411
+Variable_1_x_Variable_3 -4.694e-06   9.53e-06     -0.492      0.623   -2.34e-05     1.4e-05
+==============================================================================
+Omnibus:                        7.141   Durbin-Watson:                   0.290
+Prob(Omnibus):                  0.028   Jarque-Bera (JB):                5.747
+Skew:                           0.139   Prob(JB):                       0.0565
+Kurtosis:                       2.631   Cond. No.                     1.10e+07
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.1e+07. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Model with variables ('Variable_1', 'Variable_2', 'Variable_3', 'Variable_2_x_Variable_3'):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      House_Price_Index   R-squared:                       0.187
+Model:                            OLS   Adj. R-squared:                  0.182
+Method:                 Least Squares   F-statistic:                     36.93
+Date:                Sat, 02 Dec 2023   Prob (F-statistic):           8.28e-28
+Time:                        01:08:13   Log-Likelihood:                -3096.9
+No. Observations:                 646   AIC:                             6204.
+Df Residuals:                     641   BIC:                             6226.
+Df Model:                           4                                         
+Covariance Type:            nonrobust                                         
+===========================================================================================
+                              coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------
+const                     100.8382     10.752      9.379      0.000      79.725     121.952
+Variable_1                  0.0025      0.000      9.111      0.000       0.002       0.003
+Variable_2                 -0.0425      0.020     -2.131      0.033      -0.082      -0.003
+Variable_3                  0.1526      0.071      2.164      0.031       0.014       0.291
+Variable_2_x_Variable_3     0.0002      0.000      1.501      0.134   -6.11e-05       0.000
+==============================================================================
+Omnibus:                        7.192   Durbin-Watson:                   0.297
+Prob(Omnibus):                  0.027   Jarque-Bera (JB):                5.800
+Skew:                           0.141   Prob(JB):                       0.0550
+Kurtosis:                       2.631   Cond. No.                     7.31e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 7.31e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+Best model with R-squared 0.1822306029697146 uses variables ('Variable_1', 'Variable_2', 'Variable_3', 'Variable_2_x_Variable_3')

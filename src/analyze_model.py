@@ -41,6 +41,7 @@ def get_latest_file(path, prefix):
 # Example usage
 # Split the path and the prefix
 path = '../logs/csv_files/combination_regressions/combination_regressions_filtered'
+# path = '../logs/csv_files/multiple_regressions/ranked'
 prefix = 'top_combination_models.csv'
 # Call the function with both arguments
 latest_file = get_latest_file(path, prefix)

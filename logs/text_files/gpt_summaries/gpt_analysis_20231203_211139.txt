@@ -1,0 +1,5 @@
+From this summary, it is evident that the model with the highest R-squared value, highest Adjusted R-Squared value, smallest P-value, and lowest AIC and BIC values is the best model from the group. This model consists of HPIPONM226S, PI, TTLCONS, CPIAUCSL, PCESV, RSAFS, PPIACO, NASDAQCOM, REVOLSL, and SP500 variables. 
+
+The model's high Adjusted R-squared value suggests that the model can explain a great deal of the variance in the data and implies that the variables included have strong predictive power. Additionally, the model has a relatively low AIC and BIC scores, suggesting that the model is very efficient and not over-parameterized. With a P-value of 1.5294885889361472e-151, the model is also strongly significant, thus making it a reliable model as well.
+
+Given the high performance of this model, it is likely that the model is suitable for forecasting. To inspect the model’s accuracy further, it is advised to evaluate the model with out-of-sample data and to compare it with other models. Nevertheless, given the summary provided, there is a high possibility of accuracy when using this model for forecasting.

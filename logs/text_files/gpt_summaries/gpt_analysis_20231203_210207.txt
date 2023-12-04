@@ -1,0 +1,3 @@
+After analyzing the regression model summary above it is clear that the best model for forecasting is the model that contains 9 variables: HPIPONM226S, PI, TTLCONS, CPIAUCSL, PCESV, RSAFS, PPIACO, NASDAQCOM, REVOLSL, SP500. This model has the highest R-squared value at 0.8145769306990787, the highest adjusted R-squared at 0.8102946427244615, the lowest p-value at 1.5294885889361472e-151 and the lowest AIC and BIC values. 
+
+The other 8 models all have an R-squared value

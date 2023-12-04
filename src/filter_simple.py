@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read the CSV file
-file_path = '../logs/csv_files/simple_regressions/simple_regression_results_20231203_182034.csv'  # Update with the actual file path
+file_path = '../logs/csv_files/simple_regressions/simple_regression_results_20231204_102756.csv'  # Update with the actual file path
 df = pd.read_csv(file_path)
 
 # Filter out models with high p-values
