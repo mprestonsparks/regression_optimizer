@@ -53,7 +53,7 @@
 import pandas as pd
 
 # Read the CSV file containing complex regression results
-file_path = '../logs/csv_files/combination_regressions/combination_regression_results_20231204_103038.csv'  # Update with the actual file path
+file_path = '../logs/csv_files/combination_regressions/combination_regression_results_20231204_110436.csv'  # Update with the actual file path
 df = pd.read_csv(file_path)
 
 # Filter out models with high p-values

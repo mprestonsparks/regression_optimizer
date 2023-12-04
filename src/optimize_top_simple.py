@@ -19,6 +19,24 @@ def create_interactions(df, combo):
         interaction_df[interaction] = df[var1] * df[var2]
     return interaction_df
 
+# def run_regressions(df, variables):
+#     regression_results = []
+#     for L in range(1, len(variables) + 1):
+#         for combo in generate_combinations(variables, L):
+#             X = df[list(combo)]
+#             y = df['CSUSHPINSA']  # Replace with your dependent variable name
+#             X = sm.add_constant(X)  # Adding a constant
+#             model = sm.OLS(y, X).fit()
+
+#             regression_results.append({
+#                 'Variables': ', '.join(combo),
+#                 'R-squared': model.rsquared,
+#                 'Adj. R-squared': model.rsquared_adj,
+#                 'P-value': model.f_pvalue,
+#                 'AIC': model.aic,
+#                 'BIC': model.bic
+#             })
+#     return regression_results
 def run_regressions(df, variables):
     regression_results = []
     for L in range(1, len(variables) + 1):
@@ -28,15 +46,23 @@ def run_regressions(df, variables):
             X = sm.add_constant(X)  # Adding a constant
             model = sm.OLS(y, X).fit()
 
+            # Extract coefficients
+            coef_dict = model.params.to_dict()
+
+            # Format coefficients as a string
+            coef_str = ', '.join([f'{var}: {coef:.4f}' for var, coef in coef_dict.items()])
+
             regression_results.append({
                 'Variables': ', '.join(combo),
                 'R-squared': model.rsquared,
                 'Adj. R-squared': model.rsquared_adj,
                 'P-value': model.f_pvalue,
                 'AIC': model.aic,
-                'BIC': model.bic
+                'BIC': model.bic,
+                'Coefficients': coef_str  # Add coefficients here
             })
     return regression_results
+
 
 # Read top models file and extract variables
 top_models_file = '../logs/csv_files/simple_regressions/simple_regressions_filtered/top_simple_models.csv'
