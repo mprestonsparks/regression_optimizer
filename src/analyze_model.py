@@ -15,13 +15,13 @@ def read_model_output(file_path):
 def send_to_gpt(summary):
     prompt = ("You are an expert statistician trained in selecting the best model "
               "for forecasting. Please review the following regression model summary "
-              "and provide an insightful analysis, highlighting key findings and suggestions:\n\n"
+              "and provide an insightful analysis, highlighting key findings and suggestions. Provide your own interpretations and make bold predictions.:\n\n"
               f"{summary}")
 
     response = client.completions.create(
         model='text-davinci-003',  # Replace 'curie' with the model you're using
         prompt=prompt,
-        max_tokens=150
+        max_tokens=500
     )
     return response.choices[0].text.strip()
 
@@ -39,7 +39,11 @@ def get_latest_file(path, prefix):
         return None
 
 # Example usage
-latest_file = get_latest_file('../logs/text_files/master_tables/', 'master_table_')
+# Split the path and the prefix
+path = '../logs/csv_files/combination_regressions/combination_regressions_filtered'
+prefix = 'top_combination_models.csv'
+# Call the function with both arguments
+latest_file = get_latest_file(path, prefix)
 print(f"The latest file is: {latest_file}")
 
 # Use the latest file for reading the model summary
